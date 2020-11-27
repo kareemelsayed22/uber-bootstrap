@@ -38,16 +38,31 @@
       background: #fff;
       font-family: 'Roboto', sans-serif;
     }
-
-    .jumbotron {
-      background-color: white;
+    h1 {
+      color: #fff;
     }
     div {
       color: black;
     }
     p {
       color: black;
+      float: left;
     }
+    button {
+      float: right;
+    }
+
+    .jumbotron {
+      background-color: white;
+    }
+    .div1 {
+      float: left;
+    }
+
+    .div2 {
+      float: right;
+    }
+
 
   </style>
 
@@ -62,6 +77,9 @@
       <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html">Uber</a>
+        <div>
+          <h1 class="driverTrip">Trip details</h1>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -87,20 +105,33 @@
 
   <main role="main">
     <div class="jumbotron">
+
       <div class="col-sm-8 mx-auto">
-        <h1 class="driverTrip" style="color:black">Trip details</h1>
+
         </br>
         <div class="container-fluid">
-          <h2 class="userTrip" style="color:black">User's trip</h2>
+          <div>
+             <img src="images/map.jpeg">
+          </div>
+          <div>
+              <div class="div1">date, time</div>
+              <div class="div2">$ fair</div>
+            </br>
+              <p>car model</p>
+              <button type="button" class="btn ">
+                <i class="fa fa-angle-right" style="color:black"></i>
+              </button>
+
+          </div>
           <!-- <p>Resize the browser window to see the effect.</p> -->
           <!-- <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p> -->
-          <div class="list">
+          <!-- <div class="list">
             <ul>
               <li>pick-up location</li>
               <li>drop-off location</li>
             </ul>
-        </div>
-        <button>Receipt</button>
+        </div> -->
+        <!-- <button>Receipt</button> -->
       </div>
     </div>
     <hr />
@@ -110,45 +141,15 @@
     <div class="jumbotron">
       <div class="col-sm-8 mx-auto">
         <div class="container-fluid">
-          <h2 class="" style="color:black">Your ride with driver</h2>
           <!-- <p>Resize the browser window to see the effect.</p> -->
           <!-- <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p> -->
-          <div class="driverDetails">
-            <ul>
-              <li>driver information</li>
-            </ul>
-          </div>
+
         </div>
       </div>
     </div>
     <hr/>
   </div>
 
-  <div class="container">
-  <h2>Your trips</h2>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>Past</th>
-        <th>Upcoming</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>11/23/2020</td>
-        <td>15 miles</td>
-      </tr>
-      <tr>
-        <td>11/22/2020</td>
-        <td>23 miles</td>
-      </tr>
-      <tr>
-        <td>11/21/2020</td>
-        <td>5 miles</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 
 
 
