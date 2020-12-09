@@ -69,11 +69,17 @@ p {
 }
 /* Title image */
 .title-img{
-  width: 60%;
-  transform: rotate(25deg);
+  width: 90%;
   margin-left: 30rem;
   margin-bottom: 2rem;
 
+}
+.uberhome-img{
+  width: 70%;
+
+}
+.uber-logo{
+  width: 100%;
 }
 #title {
   background-color: #000000;
